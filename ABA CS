@@ -1,0 +1,20 @@
+/* 
+TITLE: A PROGRAM TO CALCULATE TOTAL TIME TAKEN FOR A TANK TO FILL WHEN THREE PIPES ARE OPENED SIMULTANEOUSLY
+AUTHOR: KEERTHANA S
+DATE OF CREATION : 27-8-22
+*/
+
+#include<stdio.h>
+void main()
+{
+    float  a=10, b=20, c=20,A,B,C,D,T;
+    A=1/a;
+    B=1/b;
+    C=1/c;
+   
+    D=A+B-C; //Part of the tank that will be filled in 1 hr 
+    
+    //Total time taken is
+    T= (1/D)*60;
+    printf("Total time taken to fill the tank is: %.3f mins\n",T);
+}
